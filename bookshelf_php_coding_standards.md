@@ -73,7 +73,7 @@ Class constants MUST be declared in all upper case with underscore separators.
 	const VERSION_CODE = 1;
 
 If a class constant needs to be set to an expression, `define()` MAY be used.  
-The name to be used for `define()` SHOULD be the constant name in lower case and without separators.
+The name used for `define()` SHOULD be the constant name in lower case and without separators.
 
 	define('rootdir'), __DIR__ . '/../../../../');
 	
@@ -153,7 +153,7 @@ Variables in double quote strings SHOULD be wrapped in curly brackets to avoid p
 	$my_string = 'Hello, World.';
 	$personal_string = "Hello, {$user}.";
 
-### `If` Statements
+### `if` Statements
 An `if` statement MUST look like the following:
 
 	if($some_variable == $another_variable) {
