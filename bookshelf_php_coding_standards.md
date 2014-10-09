@@ -174,7 +174,7 @@ An `if` statement MUST look like the following:
 			echo 'Some message to the user.';
 		}
 
-If an small `if` statement only ecloses one line with no `else` or `elseif` statement following, it SHOULD only use one line.
+If an small `if` statement only encloses one line with no `else` or `elseif` statement following, it SHOULD only use one line.
 Such one-line statements MUST ommit the curly brackets. There MUST be a space after the closing bracket of the one-line `if` statement.
 
     if($some_variable == $another_variable) echo 'They\'re equal';
