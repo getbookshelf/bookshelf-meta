@@ -153,6 +153,14 @@ Variables in double quote strings SHOULD be wrapped in curly brackets to avoid p
 	$my_string = 'Hello, World.';
 	$personal_string = "Hello, {$user}.";
 
+### Ternary operators
+In order to make the code more efficient, the *ternary operator* SHOULD be used, when an immediate conditional return is needed.
+
+The ternary MUST be enclosed by round brackets to ensure readability and minimize error probability. There also MUST be a space before and after `?` and  `:`.
+After the opening and before the closing bracket though, there MUST NOT be a space.
+
+    echo (empty($some_variable) ? 'Nothing' : $some_variable);
+
 ### `if` Statements
 An `if` statement MUST look like the following:
 
@@ -165,6 +173,11 @@ An `if` statement MUST look like the following:
 		else {
 			echo 'Some message to the user.';
 		}
+
+If an small `if` statement only ecloses one line with no `else` or `elseif` statement following, it SHOULD only use one line.
+Such one-line statements MUST ommit the curly brackets. There MUST be a space after the closing bracket of the one-line `if` statement.
+
+    if($some_variable == $another_variable) echo 'They\'re equal';
 
 ### `switch case` Statements
 A `switch case` statement MUST look like the following. There MUST be a comment (like `// no break`) when fall-through is intentional.
