@@ -159,7 +159,7 @@ In order to make the code more efficient, the ternary operator SHOULD be used, w
 The ternary SHOULD be enclosed by round brackets to ensure readability and minimize error probability. There also MUST be a space before and after `?` and  `:`.
 After the opening and before the closing bracket though, there MUST NOT be a space.
 
-    echo (empty($some_variable) ? 'Nothing' : $some_variable);
+    echo 'Some variable: ' . (empty($some_variable) ? 'Nothing' : $some_variable);
 
 ### `if` Statements
 An `if` statement MUST look like the following:
