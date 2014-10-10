@@ -154,9 +154,9 @@ Variables in double quote strings SHOULD be wrapped in curly brackets to avoid p
 	$personal_string = "Hello, {$user}.";
 
 ### Ternary operators
-In order to make the code more efficient, the *ternary operator* SHOULD be used, when an immediate conditional return is needed.
+In order to make the code more efficient, the ternary operator SHOULD be used, when an immediate conditional return is needed.
 
-The ternary MUST be enclosed by round brackets to ensure readability and minimize error probability. There also MUST be a space before and after `?` and  `:`.
+The ternary SHOULD be enclosed by round brackets to ensure readability and minimize error probability. There also MUST be a space before and after `?` and  `:`.
 After the opening and before the closing bracket though, there MUST NOT be a space.
 
     echo (empty($some_variable) ? 'Nothing' : $some_variable);
@@ -165,14 +165,14 @@ After the opening and before the closing bracket though, there MUST NOT be a spa
 An `if` statement MUST look like the following:
 
 	if($some_variable == $another_variable) {
-			$this->someMethod();
-		}
-		elseif(strtolower($some_variable) == $another_variable) {
-			// TODO: Show warning to the user
-		}
-		else {
-			echo 'Some message to the user.';
-		}
+		$this->someMethod();
+	}
+	elseif(strtolower($some_variable) == $another_variable) {
+		// TODO: Show warning to the user
+	}
+	else {
+		echo 'Some message to the user.';
+	}
 
 If an small `if` statement only encloses one line with no `else` or `elseif` statement following, it SHOULD only use one line.
 Such one-line statements MUST ommit the curly brackets. There MUST be a space after the closing bracket of the one-line `if` statement.
